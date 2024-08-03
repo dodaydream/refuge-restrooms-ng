@@ -1,5 +1,5 @@
 import { HttpService } from '@nestjs/axios';
-import { Injectable, ServiceUnavailableException } from '@nestjs/common';
+import { Injectable, Logger, ServiceUnavailableException } from '@nestjs/common';
 import { AxiosResponse } from 'axios';
 import { catchError, map, Observable } from 'rxjs';
 
@@ -17,6 +17,7 @@ export interface GetByLocationQueryParams {
 export class AppService {
 
   readonly ENDPOINT_URL = 'https://www.refugerestrooms.org/api'
+  private readonly logger = new Logger(AppService.name);
 
   constructor(private readonly httpService: HttpService) {}
 
@@ -30,7 +31,8 @@ export class AppService {
     }).pipe(
       map(res => res.data)
     ).pipe(
-      catchError(() => {
+      catchError((e: Error) => {
+        this.logger.error("Cannot fetch data from endpoint", e.stack);
         throw new ServiceUnavailableException()
       })
     )
