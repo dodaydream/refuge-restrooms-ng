@@ -3749,7 +3749,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/leaflet@npm:^1":
+"@types/leaflet.markercluster@npm:^1.5.4":
+  version: 1.5.4
+  resolution: "@types/leaflet.markercluster@npm:1.5.4"
+  dependencies:
+    "@types/leaflet": "npm:*"
+  checksum: 10c0/fc87a06d156f6deb1c10a55998a31adde62aae914af325af97a844cb970a081131b2e8fbe7ae4b2d83b7e90771eb567fb76d820c04d51b3baef65d21b08fd324
+  languageName: node
+  linkType: hard
+
+"@types/leaflet@npm:*, @types/leaflet@npm:^1":
   version: 1.9.12
   resolution: "@types/leaflet@npm:1.9.12"
   dependencies:
@@ -6846,6 +6855,7 @@ __metadata:
     "@angular/router": "npm:^18.1.0"
     "@types/jasmine": "npm:~5.1.0"
     "@types/leaflet": "npm:^1"
+    "@types/leaflet.markercluster": "npm:^1.5.4"
     jasmine-core: "npm:~5.1.0"
     karma: "npm:~6.4.0"
     karma-chrome-launcher: "npm:~3.2.0"
@@ -6853,6 +6863,7 @@ __metadata:
     karma-jasmine: "npm:~5.1.0"
     karma-jasmine-html-reporter: "npm:~2.1.0"
     leaflet: "npm:^1.9.4"
+    leaflet.markercluster: "npm:^1.5.3"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
     typescript: "npm:~5.5.2"
@@ -8628,6 +8639,15 @@ __metadata:
     picocolors: "npm:^1.0.0"
     shell-quote: "npm:^1.8.1"
   checksum: 10c0/bfe946d4eda8d3405b1e15d2ad71323c9f31c5cf1412733d3f933a06a967c93e76965ec7b88a312616321e73ed77ccdf67ac8f9f0ba137709f07edcc21156e4e
+  languageName: node
+  linkType: hard
+
+"leaflet.markercluster@npm:^1.5.3":
+  version: 1.5.3
+  resolution: "leaflet.markercluster@npm:1.5.3"
+  peerDependencies:
+    leaflet: ^1.3.1
+  checksum: 10c0/ce2d4065da00c727f5b05fe4568e5239ebd2556e45d859307ff9c44a6f7ecb9658cd91d055f5723d93f3e491c48949cf78109f50533b0b36b9a226e4d339213f
   languageName: node
   linkType: hard
 

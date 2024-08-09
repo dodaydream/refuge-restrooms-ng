@@ -22,7 +22,7 @@ export class AppComponent {
   constructor (private service: AppService) { }
 
   ngOnInit() {
-    this.fetchLocations(37.7749, -122.4194); // Example coordinates (San Francisco)
+    this.fetchLocations(43.6532, -79.3832); // (Toronto)
   }
 
   fetchLocations(lat: number, lng: number): void {
