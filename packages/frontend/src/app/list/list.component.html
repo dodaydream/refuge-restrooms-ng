@@ -1,0 +1,8 @@
+<ul class="list-places">
+    @for (place of places; track $index) {
+        <li>
+            <div class="place-name">{{ place.name }}</div>
+            <div class="place-street">{{ place.street }}</div>
+        </li>
+    }
+</ul>

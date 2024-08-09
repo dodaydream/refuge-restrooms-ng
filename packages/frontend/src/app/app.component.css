@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.map-wrapper {
+    height: 40%;
+    position: relative;
+}
+
+:host {
+    height: 100%;
+}

@@ -1,0 +1,18 @@
+.list-places {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-places li {
+    padding: 0.5rem;
+}
+
+.list-places .place-name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.list-places .place-street {
+    font-size: 0.875rem;
+}

@@ -2,7 +2,25 @@
 </style>
 
 <main class="main">
-  <app-map></app-map>
+  <div class="map-wrapper">
+    <app-map></app-map>
+  </div>
+
+  @if (isLoading) {
+  <div>Loading...</div>
+  } @else {
+  @if (errorMessage) {
+  <div>{{ errorMessage }}</div>
+  } @else {
+  @if (places && places.length === 0) {
+  <div>No locations found</div>
+  } @else {
+  <app-list [places]="places"></app-list>
+  }
+  }
+  }
+
+
 </main>
 
 <router-outlet />
